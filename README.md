@@ -2,8 +2,8 @@
 
 The crfppftvec module converts a simple feature vector notation to a 
 [CRF++](http://crfpp.googlecode.com/svn/trunk/doc/index.html) template file.
-This could be useful in case you want to dynamically configure and train the 
-CRF++ classifier.
+This could be useful in case you want to dynamically configure and train a 
+classifier using CRF++.
 
 Simple notation:
 
