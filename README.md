@@ -41,6 +41,7 @@ Resulting CRF++ template:
 
 Use `to_crfpp_template` to convert simple notation to CRF++ template.
 
+    from crfppftvec import to_crfpp_template
     ftvec = 'word[0:3];pos[-2:3];bipos[-2:2];triword[-3:2];B'
     template = to_crfpp_template(ftvec)
     
