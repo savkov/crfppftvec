@@ -45,4 +45,10 @@ Use `to_crfpp_template` to convert simple notation to CRF++ template.
     ftvec = 'word[0:3];pos[-2:3];bipos[-2:2];triword[-3:2];B'
     template = to_crfpp_template(ftvec)
     
+##Installation
+
+Run installation script with:
+
+    python setup.py install
+    
     
