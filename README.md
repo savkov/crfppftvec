@@ -1,7 +1,9 @@
-##What is this?
+# CRF++ Feature Vector Template Generator
+
+## What is this?
 
 The crfppftvec module converts a simple feature vector notation to a 
-[CRF++](http://crfpp.googlecode.com/svn/trunk/doc/index.html) template file.
+[CRF++](https://taku910.github.io/crfpp/#training) template file.
 This could be useful in case you want to dynamically configure and train a 
 classifier using CRF++.
 
@@ -37,18 +39,22 @@ Resulting CRF++ template:
     U17:%x[0,0]/%x[1,0]/%x[2,0]
     B
 
-##Usage
+## Usage
 
 Use `to_crfpp_template` to convert simple notation to CRF++ template.
 
-    from crfppftvec import to_crfpp_template
-    ftvec = 'word[0:3];pos[-2:3];bipos[-2:2];triword[-3:2];B'
-    template = to_crfpp_template(ftvec)
-    
-##Installation
+``` python
+from crfppftvec import to_crfpp_template
+ftvec = 'word[0:3];pos[-2:3];bipos[-2:2];triword[-3:2];B'
+template = to_crfpp_template(ftvec)
+```
+
+## Installation
 
 Run installation script with:
 
-    python setup.py install
+    $ python setup.py install
     
-    
+## Using the template file
+
+    $ crf_learn <template_file> <train_file> <model_file>
